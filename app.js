@@ -4,6 +4,12 @@ const body_parser = require('body-parser')
 const app = express();
 
 const db = require('./db');
+const initData = require('./init');
+
+
+const users = require('./models/Model.User')();
+const photos = require('./models/Model.Photos')();
+const albums = require('./models/Model.Albums')();
 
 async function init() {
     await users.sync({ force: false });
@@ -18,12 +24,10 @@ db.authenticate().then(ok => {
     console.log(err)
 })
 
-const users = require('./models/Model.User')();
-const photos = require('./models/Model.Photos')();
-const albums = require('./models/Model.Albums')();
 
 
 init();
+initData();
 //
 
 app.use(body_parser.json());
