@@ -24,7 +24,6 @@ const albums = require('./models/Model.Albums')();
 
 
 init();
-
 //
 
 app.use(body_parser.json());
@@ -32,6 +31,10 @@ app.use(body_parser.urlencoded({ extended: true }));
 
 
 ///
+
+const User = require('./routes/Route.User');
+
+app.use(User);
 
 app.listen(8000, () => {
     console.log('localhost:8000')
