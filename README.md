@@ -20,23 +20,26 @@ Document your coding process with Git and publish it on public repository in Git
 
 ## Notes
 GET - /user?id={_id}
+
 INSERT - /user
 
-  id:3
-  name:Leanne Graham
-  username:Bret 3
-  email:Sincere@april.biz
-  address_street:Kulas Light
-  address_suite:Apt. 556
-  address_city:Gwenborough
-  address_zipcode:92998-3874
-  geo_lat:-37.3159
-  geo_lng:81.1496
-  phone:1-770-736-8031 x56442
-  website:hildegard.org
-  company_name:Romaguera-Crona
-  company_catchPhrase:Multi-layered client-server neural-net
-  company_bs:harness real-time e-markets
+| Field | Value |
+| - | - |
+|id|3
+|name|Leanne Graham
+|username|Bret 3
+|email|Sincere@april.biz
+|address_street|Kulas Light
+|address_suite|Apt. 556
+|address_city|Gwenborough
+|address_zipcode|92998-3874
+|geo_lat|-37.3159
+|geo_lng|81.1496
+|phone|1-770-736-8031 x56442
+|website|hildegard.org
+|company_name|Romaguera-Crona
+|company_catchPhrase|Multi-layered client-server neural-net
+|company_bs|harness real-time e-markets
 
 UPDATE - /user?id={_id}
   Same struct of data like INSERT, without ID
