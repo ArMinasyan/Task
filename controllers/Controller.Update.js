@@ -5,12 +5,12 @@ const user = require('../models/Model.User')();
 
 
 module.exports = (req, res, next) => {
-    const { id, name, username, email, address_street, address_suite,
+    const { name, username, email, address_street, address_suite,
         address_city, address_zipcode, geo_lat, geo_lng, phone,
         website, company_name, company_catchPhrase, company_bs } = req.body;
 
     user.upsert({
-        id: id,
+        id: req.query.id,
         name: name,
         username: username,
         email: email,

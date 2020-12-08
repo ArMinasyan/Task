@@ -4,8 +4,6 @@ const photos = require('../models/Model.Photos')();
 
 albums.hasMany(photos);
 
-//photos.hasOne(user);
-
 module.exports = async (req, res, next) => {
     const userData = await user.findByPk(req.query.id);
 
